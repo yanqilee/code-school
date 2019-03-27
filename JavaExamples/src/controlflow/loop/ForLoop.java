@@ -3,29 +3,37 @@ package controlflow.loop;
 public class ForLoop {
 
     public static void main(String[] args) {
-        int x = 20;
+        simpleForLoop();
+        arrayForLoop();
+    }
 
-        /*
-        If the condition is true, the code inside the scope indicated by the
-        if statement will be executed
-        */
-        if (x < 5) {
+    private static void simpleForLoop() {
+        System.out.println("Begin simple for loop example");
 
-        } else if (false) {
+        // for loop has the syntax of
+        // (initial condition, loop condition, loop end command)
+        // Initial condition is usually a declaration or an assignment
+        // The loop will continue to run while the loop condition is true
+        // Loop end command runs at the end of each loop iteration, usually increment/decrement loop variable
+        for (int i = 0; i < 10; i++) {
+            // Your code block to be executed in the loop
+            System.out.println(i);
 
-            // Note you can have as many else if's as you want
-        } else if (false) {
-
-        } else {
-
+            // End of loop, i++ runs here
         }
 
-        // If no scope "{ }" is indicated, if will execute the statement on the next line
-        if (x < 10)
-            System.out.println("x is less than 10");
-        else
-            System.out.println("x is greater to or equal to 10");
-        System.out.println("This is a second line, hence it is outside of the scope of the else");
-        // However, for code readability, we would add "{ }" for 1 line statements as well
+        System.out.println("End simple for loop example");
+    }
+
+    private static void arrayForLoop() {
+        System.out.println("Begin array for loop example");
+
+        int[] numbers = {1, 2, 3, 4, 5 };
+
+        for (int number: numbers) {
+            System.out.println(number);
+        }
+
+        System.out.println("Begin array for loop example");
     }
 }

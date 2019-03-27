@@ -6,7 +6,7 @@ public class Declaration {
         // You can combine declaration and assignment in one statement
         double db = 1.5;
 
-        // Assignment
-
+        // A class is intialized with a constructor, note the use of ( )
+        String s = new String();
     }
 }
